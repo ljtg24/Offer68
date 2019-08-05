@@ -13,7 +13,7 @@
 #include<stack>
 #include<deque>
 #include<iostream>
-#include "/home/hadoop/VSProjects/offer_68/include/binaryTree.h"
+#include "/home/hadoop/VSProjects/Offer68/include/binaryTree.h"
 using namespace std;
 
 // 不分行从上到下打印二叉树。
