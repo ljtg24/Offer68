@@ -3,7 +3,7 @@
 
 // #include<iostream>
 
-#include "/home/hadoop/VSProjects/offer_68/include/binaryTree.h"
+#include "/home/hadoop/VSProjects/Offer68/include/binaryTree.h"
 
 void mirrorTreeRecursively(BiTree pRoot)
 {
