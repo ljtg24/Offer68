@@ -4,8 +4,14 @@
 
 #include <iostream>
 #include <exception>
+#include <vector>
+#include <set>
+#include <functional>
 
 using namespace std;
+
+typedef multiset<int, greater<int>> intSet;
+typedef multiset<int, greater<int>>::iterator setIterator;
 
 int Partition(int* numbers, int length, int start, int end)
 {
@@ -65,6 +71,26 @@ void getLeastNumbers(int* numbers, int* output, int length, int k)
     // return index;
 }
 
+void getKLeastNumbers(const vector<int>& data, intSet& leastNumbers, int k)
+{
+    if (data.size() < k || k <= 0)
+        return ;
+    vector<int>::const_iterator iter = data.begin();
+    for (; iter != data.end(); ++iter)
+    {
+        if (leastNumbers.size() < k)
+            leastNumbers.insert(*iter);
+        else
+        {
+            setIterator greatIter = leastNumbers.begin();
+            if (*iter < *(leastNumbers.begin()))
+            {
+                leastNumbers.erase(greatIter);
+                leastNumbers.insert(*iter);
+            }
+        }
+    }
+}
 
 int main()
 {
