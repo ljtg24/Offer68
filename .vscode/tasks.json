@@ -10,7 +10,7 @@
                 "-Wall",
                 "-std=c++11",
                 "-lm",
-                //"/home/hadoop/VSProjects/Offer68/include/listNode1.cpp",
+                "/home/hadoop/VSProjects/Offer68/include/listNode1.cpp",
                 "/home/hadoop/VSProjects/Offer68/include/complexListNode.cpp",
                 "/home/hadoop/VSProjects/Offer68/include/functools.cpp",
                 "/home/hadoop/VSProjects/Offer68/include/binaryTree.cpp",
